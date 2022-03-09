@@ -1,0 +1,15 @@
+---
+
+# file ptactice/1.2.kube-basics-practice/kube/service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: fileshare
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: fileshare
+  type: ClusterIP

@@ -1,0 +1,14 @@
+---
+
+# file practice/1.2.kube-basics-practice/kube/pvc.yaml
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: fileshare
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 100Mi
